@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css ">
+   <title>Завдання 3</title>
+</head>
+<body>
+   <script>
+      //Введення данних
+      let a = parseInt(prompt('Введіть вартісь одиниці товару'))
+      let b = parseInt(prompt('Введіть кількість одиниць товару'))
+
+      //Обчислення данних
+      let c = parseInt(a*b)
+      let q = parseFloat(c*0.05)
+      
+      //Виведення данних
+      document.write(`Загальна вартість ${c}<br>`)
+      document.write(`ПДВ ${q}`)
+   </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css ">
+   <title>Завдання 1</title>
+</head>
+<body>
+   <script>
+      //1. Вводимо необхідні дані для змінних firstNumber і secondNumber
+      let firstNumber = parseFloat(prompt('Введіть перше число', '033'))
+      let secondNumber = parseFloat(prompt('Введіть друге число', '0'))
+
+      //2. Обчислюємо вирази 
+      let numbersSum = firstNumber + secondNumber
+      let numbersDifferent = firstNumber - secondNumber
+      let numbersFraction = firstNumber / secondNumber
+
+      //3. Виводимо результат обчислення виразів
+      document.write(`
+   <table>
+      <thead>
+         <tr>
+            <th colspan="2">Аргументи</th>
+            <th>Добуток</th>
+            <th>Різниця</th>
+            <th>Частка</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th>Перше число</th>
+            <th>${firstNumber}</th>
+            <th rowspan="2">${numbersSum}</th>
+            <th rowspan="2">${numbersDifferent}</th>
+            <th rowspan="2">${numbersFraction}</th>
+         </tr>
+         <tr>
+            <th>Друге число</th>
+            <th>${secondNumber}</th>
+         </tr>
+      </tbody>
+   </table>
+      `)
+   </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css ">
+   <title>Завдання 6</title>
+</head>
+<body>
+   <script>
+      //Введення даних
+      let firstItemAmount = parseFloat(prompt("Введіть кількість товару №1"));
+      let firstItemPrice = parseFloat(prompt("Введіть ціну товару №1"));
+      let secondItemAmount = parseFloat(prompt("Введіть кількість товару №2"));
+      let secondItemPrice = parseFloat(prompt("Введіть ціну товару №2"));
+      let thirdItemAmount = parseFloat(prompt("Введіть кількість товару №3"));
+      let thirdItemPrice = parseFloat(prompt("Введіть ціну товару №3"));
+
+      //Обчислення результату
+      let firstItemTotalSum = firstItemAmount * firstItemPrice;
+      let secondItemTotalSum = secondItemAmount * secondItemPrice;
+      let thirdItemTotalSum = thirdItemAmount * thirdItemPrice;
+      let goodsTotalSum =
+      firstItemTotalSum + secondItemTotalSum + thirdItemTotalSum;
+
+      //Виведення
+      document.write(`<table border = "2px"> <tbody>`);
+      document.write(`<tr>`);
+      document.write(`
+      <th> 1) Товар № </th>
+      <th> Кількість шт</th>
+      <th> Ціна за 1шт</th>
+      <th> Загальна вартість</th>`);
+      document.write(`</tr>`);
+
+      document.write(`<tr>`);
+      document.write(`
+      <td> 1) Товар №1 </td>
+      <td>${firstItemAmount}</td>
+      <td> ${firstItemPrice} </td>
+      <td> ${firstItemTotalSum.toFixed(2)}</td>`);
+      document.write(`</tr>`);
+
+      document.write(`<tr>`);
+      document.write(`
+      <td> 1) Товар №2 </td>
+      <td>${secondItemAmount}</td>
+      <td> ${secondItemPrice} </td>
+      <td> ${secondItemTotalSum.toFixed(2)}</td>`);
+      document.write(`</tr>`);
+
+      document.write(`<tr>`);
+      document.write(`
+      <td> 1) Товар №3 </td>
+      <td>${thirdItemAmount}</td>
+      <td> ${thirdItemPrice} </td>
+      <td> ${thirdItemTotalSum.toFixed(2)}</td>`);
+      document.write(`</tr>`);
+
+      document.write(`<tr>
+      <td>До сплати:</td> 
+      <td><strong>${goodsTotalSum}</strong></td>
+      </tr>`);
+      document.write(`</tbody> </table>`);
+   </script>
+</body>
+</html>

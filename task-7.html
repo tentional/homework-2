@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css ">
+   <title>Завдання 7</title>
+</head>
+<body>
+   <script>
+      //Знаходимо значення
+      const minMonthNum = 1;
+      const maxMonthNum = 12;
+      const minDayNum = 1;
+      const maxDayNum = 6;
+
+      //Обчислюємо
+      let randomMonthNum = minMonthNum + Math.floor(Math.random() * (maxMonthNum - minMonthNum + 1));
+      let randomDayNum = minDayNum + Math.floor(Math.random() * (maxDayNum - minDayNum + 1));
+
+      let totalSumRandomNumbers = randomDayNum + randomMonthNum;
+
+      //Виведення данних
+      document.write(`Випадковий номер місяця ${randomMonthNum}<br>`);
+      document.write(`Випадковий номер дня ${randomDayNum}<br>`);
+      document.write(`Сума випадкового номера місяця та випадкового номера дня = ${totalSumRandomNumbers}`);
+   </script>
+</body>
+</html>
